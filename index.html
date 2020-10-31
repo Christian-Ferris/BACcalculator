@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BAC Calculator</title>
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="head" class="row align-items-center">
+    <div class="col-lg-2"><h1>BAC Calculator</h1></div>
+    <div class="col-lg-8"><img src="beer.jpg" alt="beer" height="125"></div>
+</div>
+<br>
+<br>
+<form>
+    <!-- beer row -->
+    <div class="form-group row">
+        <label for="beers" class="col-lg-1 col-form-label offset-lg-1">Number of Beers Consumed</label>
+        <div class="col-lg-4">
+            <input type="number" class="form-control" id="beers" placeholder="beers">
+        </div>
+        <div class="col-lg-6">
+            <p>One beer has 0.54 oz of alcohol.</p>
+        </div>
+    </div>
+
+    <!-- wine row -->
+    <div class="form-group row">
+        <label for="wine" class="col-lg-1 col-form-label offset-lg-1">Glasses of Wine Consumed</label>
+        <div class="col-lg-4">
+            <input type="number" class="form-control" id="wine" placeholder="wine">
+        </div>
+        <div class="col-lg-6">
+            <p>One glass of wine has 0.60 oz of alcohol.</p>
+        </div>
+    </div>
+
+    <!-- shots row -->
+    <div class="form-group row">
+        <label for="shots" class="col-lg-1 col-form-label offset-lg-1">Number of Shots Consumed</label>
+        <div class="col-lg-4">
+            <input type="number" class="form-control" id="shots" placeholder="shots">
+        </div>
+        <div class="col-lg-6">
+            <p>One shot of liquor has 0.60 oz of alcohol.</p>
+        </div>
+    </div>
+
+    <!-- weight row -->
+    <div class="form-group row">
+        <label for="weight" class="col-lg-1 col-form-label offset-lg-1">Your Weight in Pounds</label>
+        <div class="col-lg-4">
+            <input type="number" class="form-control" id="weight" placeholder="weight">
+        </div>
+        <div class="col-lg-6"></div>
+    </div>
+
+    <!-- hours row -->
+    <div class="form-group row">
+        <label for="hours" class="col-lg-1 col-form-label offset-lg-1">Hours Since Your First Drink</label>
+        <div class="col-lg-4">
+            <input type="number" class="form-control" id="hours" placeholder="hours">
+        </div>
+        <div class="col-lg-6"></div>
+    </div>
+</form>
+
+<!-- button -->
+<div class="form-group row">
+    <div class="col-lg-4 offset-lg-2">
+        <button type="submit" class="btn btn-warning btn-lg btn-block">Calculate</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4 offset-lg-2">
+        <p class="output">
+            You Blood Alcohol Content (BAC) is <span id="BAC"></span>%
+        </p>
+    </div>
+</div>
+
+
+<!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="code.js"></script>
+</body>
+</html>
